@@ -4,61 +4,79 @@
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title></title>
+<title>注册</title>
 <link rel="stylesheet" href="css/qieban.css" />
 <link rel="stylesheet" href="css/animate.min.css" />
 <link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/style-zq.css"/>
 <!--[if lt IE 9]>
 <script src="js/html5.js"></script>
 <![endif]-->
 </head>
 
-<body>	
+<body class="bg2">	
 <div class="header">
 	<div class="wrapper">
 		<div class="logo">
-			<a href="#"><img src=""/></a>
+			<a href="#"><img src="imgs/logo.png"/></a>
 		</div>
 		<div class="naver">
 			<ul>
-				<li><a href="#">dfdfa</a></li>
+				<li><a href="#">网站首页</a></li>
+				<li><a href="#">北美房产</a></li>
+				<li><a href="#">移民项目</a></li>
+				<li><a href="#">新闻资讯</a></li>
+				<li><a href="#">关于中友</a></li>
+				<li><a href="#">联系我们</a></li>
 			</ul>
 		</div>
 		<div class="srch">
 			<input type="text" class="txt" />
+			<em class="ico"></em>
 		</div>
 		<div class="login">
 			<ul>
-				<li><a href="#">dfdfa</a></li>
+				<li><a href="#">登录</a></li>
+				<li><a href="#">注册</a></li>
+				<li><a href="#">机构合作</a></li>
 			</ul>
 		</div>
 	</div>
 </div>
 
 <div class="login-pg">
-	<div class="login-wp">
+	<div class="login-wp login-wp1">
 		<div class="hd">
-			<h4>dfdfa</h4>
-			<h5>dfdfaa <a href="#">dfad</a> </h5>
+			<h4 class="l">注册</h4>
+			<h5 class="r">已有账号，立即 <a href="#">登录</a> </h5>
 		</div>
 		<div class="bd">
 			<ul>
 				<li>
-					<div class="img">
-						<img src=""/>
-					</div>
 					<div class="txt">
-						<input type="text" class="tx" placeholder="" />
+						<input type="text" class="tx t2" placeholder="请输入手机号" />
 					</div>
 				</li>
 				<li>
-					<input type="text" class="tx" />
-					<img src=""/>
+					 <input type="text" class=" tx b1" name="" id="" value=""placeholder="请输入验证码" />
+						<div class="b2">
+							获取验证码
+						</div>
 				</li>
-			</ul>			
+				<li>
+					<div class="txt">
+						<input type="text" class="tx t2" placeholder="设置密码" />
+					</div>
+				</li>
+				<li>
+					<div class="txt">
+						<input type="text" class="tx t2" placeholder="重复密码" />
+					</div>
+				</li>
+			</ul>
 		</div>
 		<div class="ft">
-			<input type="submit" name="" id="" value="" />
+			<input type="submit" class="btn" name="" id="" value="立即注册" />
 		</div>
 	</div>
 </div>
@@ -67,34 +85,55 @@
 	<div class="wrapper">
 		<div class="logo">
 			<a href="#">
-				<img src=""/>
-				<h4>dfsdfa</h4>
+				<img src="imgs/logo01.png"/>
+				<h4>中友财富投资管理</h4>
 			</a>
 		</div>
 		<div class="txt">
-			<p>dfdfa</p>
+			<p>电话：010-1235661</p>
+			<p>手机：186112368450</p>
+			<p>邮箱：12356478@163.com</p>
+			<p>邮编：102600</p>
+			<p>地址：北京市朝阳区百子湾路后现代城</p>
 		</div>
 		<div class="qr-code">
-			<img src=""/>
-			<h4>sdfdfa</h4>
+			<img src="images/d-img42.jpg"/>
+			<h4>扫一扫  关注我们</h4>
 		</div>
 		<div class="tel">
-			<a href="#"><img src=""/>dfdfa</a>
+			<a href="#"><img src="imgs/d-ico18.png"/>在线客服</a>
+			<a href="#"><img src="imgs/d-ico19.png"/>在线留言</a>
 		</div>
+	</div>
+	<div class="copyright">
+		<p>Copyright 2015 中友财富 All Rights Reserved. 京ICP备113486150号</p>
 	</div>
 </div>
 
-<div class="copyright">
-	<p>dfdfa</p>
-</div>
 
 
 
 
 
+<script type="text/javascript" src="js/jquery-1.7.2.js" ></script>
+<script type="text/javascript" src="js/wow.js" ></script>
+<script type="text/javascript" src="js/getVerifyCode.js">
+</script>
+<script type="text/javascript" src="js/script.js" ></script>
+<script>
+	$(function(){
+				//获取普通验证码
+			$('.login-wp li .b2').on("click",getVerifyCode({
+				callBack: function (){//按钮点击后的回调函数，-----必须-----
+					//在这里你还是可以对你的按钮进行操作
+					console.log(this);
+					alert("验证码发送成功");
+				},
+				time: 20,//定时时间，以秒为单位
+				unabledClass: "unlabed"//按钮不能用的样式，即点击按钮后的样式
+			}));
+		});
 
-<script type="text/javascript" src="js/jquery-1.7.2.js" ></script></span>
-<script type="text/javascript" src="js/wow.js" ></script></s>
-<script type="text/javascript" src="js/script.js" ></script></s>
+</script>
 </body>
 </html>
