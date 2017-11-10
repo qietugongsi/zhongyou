@@ -75,6 +75,34 @@ body a{
 .copyright{
 	height: 63px; line-height: 63px; background: #192025; text-align: center;
 }
+/*右边浮框*/
+.float-contact{
+	position: fixed; top: 50%; margin-top: -150px; right: 0;
+}
+.float-contact li{
+	height: 60px; margin-bottom: 1px; position: relative;
+}
+.float-contact li .img{
+	background: #c5c5c5; width: 60px; height: 60px;
+}
+.float-contact li .desc{
+	position: absolute; right:83px; top: 0;width: 162px; height: 60px; background: #770628; text-align: center; line-height: 60px; font-size: 18px; color: #fff; display: none;
+}
+.float-contact li .desc a{
+	display: block; color: #fff;
+}
+.float-contact li .desc em{
+	display: block; background: url(../imgs/d-ico17.png) no-repeat; width: 14px; height: 16px; position: absolute; right: -14px; top: 50%; margin-top: -8px;
+}
+
+.float-contact li.on .img,
+.float-contact li:hover .img{
+	background: #770628;
+}
+.float-contact li.on .desc,
+.float-contact li:hover .desc{
+	display: block;
+}
 /*banner*/
 .h-banner{
 	height: 607px; position: relative; margin: 0 auto;width: 1920px;
