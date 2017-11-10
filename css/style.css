@@ -433,17 +433,17 @@ padding: 15px 10px 0 15px;	position: relative; height: 122px;
 	margin-bottom: 9px; background: #fff; height: 37px; position: relative; padding-left: 17px; line-height: 37px; font-size: 16px;
 }
 .index-data .form li .txt{
-	position: absolute; right: 0; width: 240px; top: 0; height: 100%; border: 0;
+	position: absolute; right: 0; width: 240px; top: 0;  border: 0; height: 37px; line-height: 37px;
 }
 .index-data .form li.last{
-	background: none; padding-left: 0;
+	background: none; padding-left: 0; position: relative;
 }
 .index-data .form li.last .txt{
-	position: static !important; right: auto !important; width: 73px; padding: 0 15px;
+	right: auto !important; width: 73px; padding: 0 15px; left: 0; 
 }
 .index-data .form li .btn{
-	height: 37px; width: 102px; margin-left: 3px; border: 0; font-size: 16px; color: #000;
+	height: 37px; width: 102px; margin-left: 3px; border: 0; font-size: 16px; color: #000; position: absolute; left: 108px; top: 0;
 }
 .index-data .form li .btn-1{
-	background: #ff9900; color: #fff;
+	background: #ff9900; color: #fff; position: absolute; top: 0; left: auto !important; right: 0;
 }
