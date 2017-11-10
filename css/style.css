@@ -86,13 +86,13 @@ body a{
 	background: #c5c5c5; width: 60px; height: 60px;
 }
 .float-contact li .desc{
-	position: absolute; right:83px; top: 0;width: 162px; height: 60px; background: #770628; text-align: center; line-height: 60px; font-size: 18px; color: #fff; display: none;
+	position: absolute; right:53px; top: 0;  text-align: center; line-height: 60px; font-size: 18px; color: #fff; display: none; padding-right: 30px;
 }
 .float-contact li .desc a{
-	display: block; color: #fff;
+	display: block; color: #fff;width: 162px; height: 60px;background: #770628;
 }
 .float-contact li .desc em{
-	display: block; background: url(../imgs/d-ico17.png) no-repeat; width: 14px; height: 16px; position: absolute; right: -14px; top: 50%; margin-top: -8px;
+	display: block; background: url(../imgs/d-ico17.png) no-repeat; width: 14px; height: 16px; position: absolute; right: 18px; top: 50%; margin-top: -8px;
 }
 
 .float-contact li.on .img,
@@ -107,8 +107,20 @@ body a{
 .h-banner{
 	height: 607px; position: relative; margin: 0 auto;width: 1920px;
 }
+.h-banner .hd{
+	position: absolute; left: 50%; margin-left: -40px; right: 0; bottom: 45px;z-index: 1;
+}
+.h-banner .hd li{
+	width: 14px; height: 14px; border: 1px solid #fff; border-radius: 100%;float: left; display: inline; margin: 0 6px; 
+}
+.h-banner .hd li.on{
+	background: #fff; 
+}
+.h-banner .bd li{
+position: relative;
+}
 .h-banner img{
-	position: absolute; left: 0; top: 0;
+	/*position: absolute; left: 0; top: 0;*/
 }
 .h-banner .txt{
 	position: absolute; right: 50%; top: 50%; background: url(../imgs/banner-bg.png); padding: 40px 0; width: 1060px; font-size: 16px; color: #fff; line-height: 2; margin-top: -130px; margin-right: -100px;
@@ -119,14 +131,14 @@ body a{
 .h-banner .txt h2{
 	font-size: 60px;color: #c27b01; line-height: 1.3; padding-bottom: 18px;
 }
-.h-banner .txt ul{}
+.h-banner .txt dl{}
 .h-banner .txt .desc{
 	padding-bottom: 40px;
 }
-.h-banner .txt li{
+.h-banner .txt dd{
 	float: left; display: inline;
 }
-.h-banner .txt li a{
+.h-banner .txt dd a{
 	display: block; width: 128px; height: 42px;font-size: 16px; color: #fff; line-height: 42px; text-align: center; background: #c27b01; border-radius: 3px; margin-right: 12px;
 }
 .h-banner .txt .l2 a{
@@ -168,7 +180,7 @@ body a{
 	
 }
 .ui-head{
-	height: 45px; background: #f7f8fa; margin-bottom: 20px; position: relative; padding-left: 37px;
+	height: 45px; background: #f7f8fa; margin-bottom: 20px; position: relative; padding-left: 37px; clear: both;
 }
 .ui-head em{
 	position: absolute; left: 0; display: block; top: 0; height: 100%; width: 8px; background: #770628;
@@ -184,6 +196,9 @@ body a{
 }
 .ui-head .more{
 	position: absolute; right: 13px; top: 0; line-height: 45px; font-size: 16px;
+}
+.ui-head a:hover{
+	color: #c90101;
 }
 .house-pro-list{
 	width: 105%; height: auto; overflow: hidden; margin-bottom: 40px;
@@ -289,4 +304,146 @@ padding: 15px 10px 0 15px;	position: relative; height: 122px;
 }
 .show-actv li:hover .txt h4{
 	color: #770628;
+}
+
+.h-auto-1{
+	
+}
+.h-auto-1 .imm-pro{
+	float: left; display: inline; width: 766px; height: auto; overflow: hidden; margin-bottom: 40px;
+}
+
+.h-auto-1 .imm-pro .body{
+	 height: auto; overflow: hidden;
+}
+.h-auto-1 .imm-pro .body ul{
+	width: 105%;
+}
+
+.h-auto-1 .imm-pro .body li{
+	float: left; display: inline; margin-right: 30px; width: 367px; height: 236px;  position: relative; text-align: center;
+}
+.h-auto-1 .imm-pro .body li .img{
+	display: block;
+}
+.h-auto-1 .imm-pro .body li .mask{
+	position: absolute; left: 0; top: 0;  width: 100%;height: 100%; background: url(../imgs/img-bg.png);
+}
+.h-auto-1 .imm-pro .body li .btn{
+	font-size: 40px; font-weight: bold; position: absolute; left: 0; top: 0; color: #fff;  width: 100%; height: 100%;
+}
+.h-auto-1 .imm-pro .body li .btn span{
+	border: 1px solid #fff;  display: inline-block; padding: 20px 25px; margin: 0 auto; margin-top: 80px; line-height: 1;
+}
+
+.h-auto-1 .imm-lists{
+	float: right; display: inline; width: 415px; height: auto; overflow: hidden;
+}
+.h-auto-1 .imm-lists .body{
+	padding-left: 8px; padding-top: 4px;
+}
+.h-auto-1 .imm-lists li{
+	font-size: 16px; line-height: 39px;
+}
+.h-auto-1 .imm-lists li a{
+	color: #666;
+}
+.h-auto-1 .imm-lists li a:hover{
+	color: #c90101;
+}
+.new-wrap{
+	clear: both; margin-bottom: 40px; height: auto; overflow: hidden;
+}
+
+.new-wrap .new-lists{
+	float: left; display: inline; width: 580px; 
+}
+.new-wrap .new-lists li{
+	border-bottom: 1px dashed #cccccc;
+}
+.new-wrap .new-lists .hd{
+	height: 43px; line-height: 43px; font-size: 16px; position: relative;
+}
+.new-wrap .new-lists .hd .time{
+	font-size: 14px; position:  absolute; right: 0; top: 0;
+}
+.new-wrap .new-lists .bd{
+	font-size: 14px; color: #999; line-height: 23px; margin-bottom:15px; display: none;
+}
+.new-wrap .new-lists .on .hd a,
+.new-wrap .new-lists li:hover .hd a{
+	 color: #c90101; font-weight: bold;
+}
+.new-wrap .new-lists .on .bd,
+.new-wrap .new-lists li:hover .bd{
+	display: block;
+}
+
+.new-wrap .img{
+	float: right; display: inline; width: 576px; height: 372px;
+}
+
+.core-serv{
+	height: auto; overflow: hidden; margin-bottom: 60px; 
+}
+.core-serv .body{
+	padding-left: 25px; padding-top: 20px;
+}
+.core-serv li{
+	float: left; display: inline; width: 325px; text-align: center; font-size: 24px; 
+}
+.core-serv li .img{
+	margin-bottom: 20px;
+}
+.core-serv li a{
+	color: #770628;
+}
+.core-serv li.ico{
+	width: 80px; height: 10px; margin-top: 84px;
+}
+.core-serv li.ico i{
+	display: block; width: 80px; height: 10px; background: url(../imgs/d-ico41.png) no-repeat ; 
+}
+/*首页底部获取资料*/
+.index-data{
+	height: 217px; background: url(../images/d-img08.jpg) no-repeat center top; position: relative;
+}
+.index-data .close{
+	position: absolute; display: block; width: 50px; height: 30px; background: url(../imgs/img-bg.png);color: #fff; text-align: center; line-height: 30px; right: 0; top: 0; cursor: pointer;
+}
+.index-data  .tit{
+	position: absolute; left: 0; top: 75px; font-size: 55px; color: #fcca1a; width: 485px; text-align: center;
+}
+.index-data  .tit i{
+	display: block; width: 53px; height: 3px; background: #fcca1a; position: absolute;top: 40px; 
+}
+.index-data  .tit .i1{
+	left: 0; 
+}
+.index-data  .tit .i2{
+	left: auto !important; right: 0; 
+}
+.index-data .form{
+	width: 410px;background: url(../imgs/img-bg.png); position: absolute; right: 105px; top: 0; height: 217px;
+}
+.index-data .form ul{
+	padding: 45px 0 0 50px; width: 323px;
+}
+.index-data .form li{
+	margin-bottom: 9px; background: #fff; height: 37px; position: relative; padding-left: 17px; line-height: 37px; font-size: 16px;
+}
+.index-data .form li .txt{
+	position: absolute; right: 0; width: 240px; top: 0; height: 100%; border: 0;
+}
+.index-data .form li.last{
+	background: none; padding-left: 0;
+}
+.index-data .form li.last .txt{
+	position: static !important; right: auto !important; width: 73px; padding: 0 15px;
+}
+.index-data .form li .btn{
+	height: 37px; width: 102px; margin-left: 3px; border: 0; font-size: 16px; color: #000;
+}
+.index-data .form li .btn-1{
+	background: #ff9900; color: #fff;
 }
