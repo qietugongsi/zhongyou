@@ -36,7 +36,7 @@
 	float: left;width: 40px;height: 40px;background-color: #f1f1f1;border: 1px solid #bdbdbd;border-right: none;
 }
 .login-wp .bd li .tx{
-	height: 40px;width: 247px;border:none;padding-left: 10px;font-size: 13px;color: #b3b3b3;border: 1px solid #bdbdbd;
+	height: 40px;width: 247px;border:none;padding-left: 10px;font-size: 13px;color: #b3b3b3;border: 1px solid #bdbdbd;line-height: 40px;
 }
 .login-wp .bd li .t1{
 	width: 155px;float: left;
@@ -103,8 +103,11 @@
 .fair-warn{
 	margin-top: 10px;height: auto;overflow: hidden;
 }
+.fair-warn ul{
+	width: 105%;
+}
 .fair-warn li{
-	width: 580px;float: left;margin-right:20px;
+	width: 580px;float: left;margin-right:38px;
 }
 .fair-warn li .img{
 	position: relative;
@@ -142,7 +145,8 @@ padding: 0 !important;
 	height: 45px;line-height: 45px;border-bottom: 1px solid #ececec;
 }
 .review-past .head h3{
-	font-size: 20px;color: #770628;height: 43px;display: inline-block;border-bottom:3px solid #770628;
+	font-size: 20px;color: #770628;display: inline-block;border-bottom:3px solid #770628;
+	position: relative;top: -1px;
 }
 .review-past ul{
 	margin-top: 25px;
@@ -153,6 +157,10 @@ padding: 0 !important;
 .review-past ul .on,
 .review-past li:hover{
 	background-color: #f2f2f2;border-color: #f2f2f2;
+}
+.review-past .on .txt,
+.review-past li:hover .txt{
+	border-color: #FFFFFF;
 }
 .review-past li .img{
 	float: left;width: 292px;height: 187px;overflow: hidden;
@@ -221,7 +229,7 @@ padding: 0 !important;
 	font-size: 18px;line-height:30px ;
 }
 .exhi-wrap .left .txt p{
-	font-size: 16px;line-height: 30px;
+	font-size: 16px;line-height: 30px;margin-left: 20px;
 }
 .exhi-wrap .left .txt i{
 	display: inline-block;height:20px;width:6px;background-color: #770628;margin-right: 15px;position: relative;top:3px;
@@ -333,11 +341,20 @@ padding: 0 !important;
 	font-size: 14px;color: #666666;line-height: 25px;
 }
 /*全球房产*/
-.body{
-	margin-top: 20px;position: relative;overflow: initial;
+.house-pro-list{
+	position: relative;
 }
-.body .hot{
-	border: none;
+.house-pro-list img{
+	width: 380px;height: 261px;display: block;
+}
+.body{
+	margin-top: 20px;overflow: initial;width: 100%;
+}
+.body .hd{
+	width: 1320px;height: 50px;
+}
+.body li{
+	margin-right: 24px;
 }
 .body .li .img{
 	position: relative;
@@ -351,19 +368,14 @@ padding: 0 !important;
 .body li .txt{
 	border: 1px solid #d2d2d2 ;height: 134px;
 }
+.body .bd{
+	width: 100%;overflow: hidden;
+}
 .body .bd li h3{
 	padding-bottom: 30px;
 }
 .body li .btn{
 	bottom: 10px !important;
-}
-.body .bd .on,
-.body li:hover{
-	border-color:#c27b01;
-}
-.body .bd .on .txt,
-.body li:hover .txt{
-	border: none;
 }
 .house-pro-list li .img img{
 	display: block;
@@ -388,7 +400,7 @@ padding: 0 !important;
 	background:url(../imgs/zq-ico3.png) no-repeat;
 }
 .house-pro-list .next{
-	right: -10px;left: auto;background:url(../imgs/zq-ico4.png) no-repeat;
+	right: -60px;left: auto;background:url(../imgs/zq-ico4.png)  no-repeat;
 }
 
 .h-auto{
@@ -423,11 +435,21 @@ padding: 0 !important;
 	float: left;color: #666666;margin-right: 40px;margin-bottom: 10px;width: 185px;
 }
 .house-detail li .txt .line{
-	width: auto;margin-right: auto;
+	width: auto;margin-right: auto;position: relative;
 }
-.house-detail li .txt i{
-	background: url(../imgs/zq-ico5.png) no-repeat right center;width: 147px;height: 7px;
-	display:inline-block;padding-left: 5px;
+.house-detail li .line span{
+	position: absolute;
+    height: 7px;width: 145px;
+    border-radius: 8px;
+    background: #bebebe;
+    overflow: hidden;
+    top: 5px;left:115px;
+}
+.house-detail li .line i{
+	display: block;
+    height: 100%;
+    background: #c27b01;
+   border-radius: 8px;
 }
 .house-detail li .ft{
 	height: auto;
@@ -489,7 +511,7 @@ padding: 0 !important;
 	margin-bottom: 10px;height: 25px;width: 250px;line-height: 25px;
 }
 .house-side .from .txt{
-	height: 25px;width: 245px;padding-left: 5px;font-size: 14px;color: #a9a9a9;border: none;border: 1px solid #e7e7e7;
+	height: 25px;width: 245px;padding-left: 5px;font-size: 14px;color: #a9a9a9;border: none;border: 1px solid #e7e7e7;line-height: 25px;
 }
 .house-side .from .b1{
 	float: left;width: 158px !important;
@@ -501,7 +523,7 @@ padding: 0 !important;
 	width: 255px;height: 40px;line-height: 40px;text-align: center;background-color: #770628;color: #FFFFFF;font-size: 14px;cursor: pointer;border: none;margin-bottom: 15px;
 }
 .house-side .img{
-	margin: 15px 0;position: relative;width: 255px;height: 157px;overflow: hidden;
+	position: relative;width: 255px;height: 157px;overflow: hidden;
 }
 .house-side .img .txt{
 	position: absolute;height: 50px;width:245px ;background: rgba(0,0,0,0.5);bottom: 0;left: 0;right: 0;padding-left: 10px;padding-top: 15px;
@@ -510,7 +532,7 @@ padding: 0 !important;
 	font-size: 12px;color: #FFFFFF;margin-bottom: 10px;
 }
 .house-side .lists{
-	margin: 13px 0;height: auto;overflow: hidden;
+	margin: 27px 0;height: auto;overflow: hidden;
 }
 .house-side .lists li{
 	margin-bottom: 17px;
