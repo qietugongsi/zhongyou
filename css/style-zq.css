@@ -30,6 +30,7 @@
 }
 .login-wp .bd li{
 	margin-bottom: 20px;height: 42px;
+	
 }
 .login-wp .bd li .img{
 	float: left;width: 40px;height: 40px;background-color: #f1f1f1;border: 1px solid #bdbdbd;border-right: none;
@@ -235,9 +236,9 @@ padding: 0 !important;
 .exhi-wrap .right .hd{
 	height: 50px;border-bottom: 1px solid #d2d2d2;line-height: 50px;
 }
-.exhi-wrap .right .hd h4{
+/*.exhi-wrap .right .hd h4{
 	font-size: 16px;color: #333333;border-bottom: 4px solid #d2d2d2;display: inline-block;height: 47px;
-}
+}*/
 .exhi-wrap .right .from{
 	margin-top: 15px;
 }
@@ -275,7 +276,7 @@ padding: 0 !important;
 
 /*移民项目*/
 .house-nav{
-	height: 91px;border: 1px solid #e8e8e8;
+	border: 1px solid #e8e8e8;
 }
 .house-nav dl{
 	height: 45px;border-bottom: 1px dashed #e8e8e8;margin: 0 10px;line-height: 45px;
@@ -330,4 +331,190 @@ padding: 0 !important;
 }
 .project-list li p{
 	font-size: 14px;color: #666666;line-height: 25px;
+}
+/*全球房产*/
+.body{
+	margin-top: 20px;position: relative;overflow: initial;
+}
+.body .hot{
+	border: none;
+}
+.body .li .img{
+	position: relative;
+}
+.body .h-ico{
+	position: absolute;background: url(../imgs/d-ico06.png) no-repeat;width: 110px;height: 110px;top: 0;left: 0;
+}
+.body li{
+	border:2px solid #FFFFFF;
+}
+.body li .txt{
+	border: 1px solid #d2d2d2 ;height: 134px;
+}
+.body .bd li h3{
+	padding-bottom: 30px;
+}
+.body li .btn{
+	bottom: 10px !important;
+}
+.body .bd .on,
+.body li:hover{
+	border-color:#c27b01;
+}
+.body .bd .on .txt,
+.body li:hover .txt{
+	border: none;
+}
+.house-pro-list li .img img{
+	display: block;
+}
+.house-pro-list li h4{
+	font-size: 16px;color: #fe4040;
+}
+.house-pro-list li h4 span{
+	font-size: 14px;color: #9e9e9e;
+}
+.house-pro-list li .txt .btn{
+	bottom: 0;
+    top: auto !important;
+    left: 15px !important;
+    background: #C27B01;
+    color: #fff;
+}
+
+.house-pro-list .prev,
+.house-pro-list .next{
+	position: absolute;width: 30px;height: 52px;cursor: pointer;z-index: 999;left:-60px;top: 50%;margin-top: -26px;
+	background:url(../imgs/zq-ico3.png) no-repeat;
+}
+.house-pro-list .next{
+	right: -10px;left: auto;background:url(../imgs/zq-ico4.png) no-repeat;
+}
+
+.h-auto{
+	margin-top: 25px;height: auto;overflow: hidden;
+}
+.house-detail{
+	float: left;width: 895px;margin-bottom: 10px;
+}
+.house-detail li{
+	margin-bottom:20px ;height: 232px;overflow: hidden;
+}
+.house-detail li .img{
+	float: left;width: 338px;height: 232px;overflow: hidden;
+}
+.house-detail li img{
+	transition: all 0.5s;
+}
+.house-detail li:hover img{
+	transform: scale(1.1);
+}
+.house-detail li .txt{
+	float: left;width: 490px;height: 205px;border: 1px solid #e7e7e7;border-left: none;
+	padding: 25px 40px 0 25px;
+}
+.house-detail li .txt h3{
+	font-size: 18px;color: #666666;margin-bottom: 30px;
+}
+.house-detail li .bd{
+	height: auto;overflow: hidden;
+}
+.house-detail li .bd dd{
+	float: left;color: #666666;margin-right: 40px;margin-bottom: 10px;width: 185px;
+}
+.house-detail li .txt .line{
+	width: auto;margin-right: auto;
+}
+.house-detail li .txt i{
+	background: url(../imgs/zq-ico5.png) no-repeat right center;width: 147px;height: 7px;
+	display:inline-block;padding-left: 5px;
+}
+.house-detail li .ft{
+	height: auto;
+}
+.house-detail li .ft h4{
+	font-size: 18px;color: #ff0000;float: left;margin-top: 35px;
+}
+.house-detail li .ft big{
+	font-size: 30px;
+}
+.house-detail li .ft span{
+	color: #666666;
+}
+.house-detail li .ft dl{
+	float: right;margin-top: 45px;
+}
+.house-detail li .ft dd{
+	float: left;
+}
+.house-detail li .ft a{
+	display: block;width: 95px;height: 35px;line-height: 35px;text-align: center;font-size: 12px;color: #666666;background-color: #ededed;border-radius:4px ;
+}
+.house-detail li .ft .on{
+	margin-right:10px ;
+}
+.house-detail li .ft .on a,
+.house-detail li .ft a:hover{
+	background-color:#770628 ;color: #FFFFFF;
+}
+.house-side{
+	width: 255px;float: right;border: 1px solid #e7e7e7;height: auto;overflow: hidden;
+	padding: 0 10px;
+}
+.house-side .hd{
+	height: 45px;line-height: 45px;border-bottom: 1px solid #e7e7e7;
+}
+.house-side .hd h4{
+	float: left;font-size: 16px;color: #333333;border-bottom: 3px solid #d2d2d2;position: relative;top: -3px;
+}
+.house-side .hd h5{
+	float: right;font-size: 12px;color: #666666;
+}
+.house-side .bd{
+	height: auto;
+}
+.house-side .bd li{
+	margin-top: 15px;font-size: 14px;color: #333333;
+}
+.house-side .bd li label{
+	margin-right:20px;display:inline-block;
+}
+.house-side .bd li label:last-child{
+	margin-right: auto;
+}
+.house-side .from{
+	margin-top: 15px;height: auto;overflow: hidden;
+}
+.house-side .from li{
+	margin-bottom: 10px;height: 25px;width: 250px;line-height: 25px;
+}
+.house-side .from .txt{
+	height: 25px;width: 245px;padding-left: 5px;font-size: 14px;color: #a9a9a9;border: none;border: 1px solid #e7e7e7;
+}
+.house-side .from .b1{
+	float: left;width: 158px !important;
+}
+.house-side .from .b2{
+	float: left;width: 85px;height: 27px;background-color: #1779af;text-align: center;line-height: 27px;color: #FFFFFF;font-size: 14px;cursor: pointer;
+}
+.house-side .btn{
+	width: 255px;height: 40px;line-height: 40px;text-align: center;background-color: #770628;color: #FFFFFF;font-size: 14px;cursor: pointer;border: none;margin-bottom: 15px;
+}
+.house-side .img{
+	margin: 15px 0;position: relative;width: 255px;height: 157px;overflow: hidden;
+}
+.house-side .img .txt{
+	position: absolute;height: 50px;width:245px ;background: rgba(0,0,0,0.5);bottom: 0;left: 0;right: 0;padding-left: 10px;padding-top: 15px;
+}
+.house-side .img .txt p{
+	font-size: 12px;color: #FFFFFF;margin-bottom: 10px;
+}
+.house-side .lists{
+	margin: 13px 0;height: auto;overflow: hidden;
+}
+.house-side .lists li{
+	margin-bottom: 17px;
+}
+.house-side .lists li a{
+	display: block;font-size: 12px;color: #555555;
 }
