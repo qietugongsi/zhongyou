@@ -95,7 +95,7 @@
 		</div>
 		<div class="bd">
 			<ul>
-			<li class="on">
+			<li class="hot">
 					<em class="h-ico"></em>
 					<div class="img">
 						<img src="images/d-img01.jpg"/>
@@ -153,7 +153,7 @@
 	<div class="h-auto">
 		<div class="house-detail">
 			<ul>
-				<li  class="wow fadeInUp">
+				<li>
 					<div class="img">
 						<img src="imgs/zq-img3.jpg"/>
 					</div>
@@ -164,7 +164,8 @@
 							<dd>房屋类型：别墅 </dd>
 							<dd>房屋面积：150 平方米 </dd>
 							<dd>可选户型：一室   两室   三室   </dd>
-							<dd class="line">已 售 出：523套 <i></i></dd>
+							<dd class="line">已 售 出：523套 <span><i style="width: 75%;"></i></span></dd>
+							
 						</dl>
 						</div>
 						<div class="ft">
@@ -188,7 +189,7 @@
 							<dd>房屋类型：别墅 </dd>
 							<dd>房屋面积：150 平方米 </dd>
 							<dd>可选户型：一室   两室   三室   </dd>
-							<dd class="line">已 售 出：523套 <i></i></dd>
+							<dd class="line">已 售 出：523套 <span><i style="width: 75%;"></i></span></dd>
 						</dl>
 						</div>
 						<div class="ft">
@@ -212,7 +213,7 @@
 							<dd>房屋类型：别墅 </dd>
 							<dd>房屋面积：150 平方米 </dd>
 							<dd>可选户型：一室   两室   三室   </dd>
-							<dd class="line">已 售 出：523套 <i></i></dd>
+							<dd class="line">已 售 出：523套 <span><i style="width: 75%;"></i></span></dd>
 						</dl>
 						</div>
 						<div class="ft">
@@ -236,7 +237,7 @@
 							<dd>房屋类型：别墅 </dd>
 							<dd>房屋面积：150 平方米 </dd>
 							<dd>可选户型：一室   两室   三室   </dd>
-							<dd class="line">已 售 出：523套 <i></i></dd>
+							<dd class="line">已 售 出：523套 <span><i style="width: 75%;"></i></span></dd>
 						</dl>
 						</div>
 						<div class="ft">
@@ -356,6 +357,7 @@
 <script type="text/javascript" src="js/script.js" ></script>
 </body>
 <script>
-	jQuery(".house-pro-list").slide({mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,vis:3});
+
+jQuery(".house-pro-list").slide({mainCell:".bd ul",autoPage:true,effect:"leftLoop",autoPlay:true,scroll:1,vis:3,});
 </script>
 </html>
