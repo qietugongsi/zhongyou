@@ -14,5 +14,17 @@ $(function(){
 	 if($(".wow").size() > 0){
 		new WOW().init();
 	}
+	 $(function(){
+				//获取普通验证码
+			$('.b2').on("click",getVerifyCode({
+				callBack: function (){//按钮点击后的回调函数，-----必须-----
+					//在这里你还是可以对你的按钮进行操作
+					console.log(this);
+					alert("验证码发送成功");
+				},
+				time: 20,//定时时间，以秒为单位
+				unabledClass: "unlabed"//按钮不能用的样式，即点击按钮后的样式
+			}));
+		});
 	
 })
