@@ -56,6 +56,9 @@
 .login-wp .ft .btn{
 	height: 42px;line-height: 42px;width: 303px;background-color: #780628;text-align: center;font-size: 18px;color: #FFFFFF;border: none;cursor: pointer;
 }
+.login-wp .ft .btn:hover{
+	background-color: #680422;
+}
 /*注册*/
 .bg2{
 	background: url(../imgs/zq-img2.jpg)  center;
@@ -95,10 +98,11 @@
 }
 .reset-password .btn{
 	margin-top: 40px;width: 115px;height: 35px;line-height: 35px;text-align: center;
-	font-size: 16px;color: #FFFFFF;background-color: #770628;cursor: pointer;border: none;
-	border-radius: 3px;margin-right:45px;
+	font-size: 16px;color: #FFFFFF;background-color: #770628;cursor: pointer;border: none;border-radius: 3px;margin-right:45px;
 }
-
+.reset-password .btn:hover{
+	background-color: #680422;
+}
 /*展会活动*/
 .fair-warn{
 	margin-top: 10px;height: auto;overflow: hidden;
