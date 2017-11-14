@@ -524,7 +524,7 @@
 				<em></em>
 			</div>
 		</li>
-		<li>
+		<li class="to-top">
 			<div class="img">
 				<img src="imgs/d-ico16.png"/>
 			</div>
@@ -540,6 +540,9 @@
 <script type="text/javascript" src="js/script.js" ></script>
 <script>
 	jQuery(".slideBox").slide({mainCell:".bd ul",effect:"left"});
+	$(".to-top").click(function(){
+		$("html,body").animate({scrollTop:0},500);
+	})
 </script> 
 </body>
 </html>
