@@ -75,7 +75,7 @@
 	<div class="pages">
 		<ul>
 			<li class="prev" ><a href="#">上一页</a></li>
-			<li><a href="#">1</a></li>
+			<li class="active"><a href="#">1</a></li>
 			<li><a href="#">2</a></li>
 			<li><a href="#">3</a></li>
 			<li><a href="#">4</a></li>
@@ -119,5 +119,10 @@
 <script type="text/javascript" src="js/jquery-1.7.2.js" ></script></span>
 <script type="text/javascript" src="js/wow.js" ></script></span>
 <script type="text/javascript" src="js/script.js" ></script></span>
+<script>
+	$(".pages li").mouseover(function(){
+		$(this).addClass("active").siblings().removeClass("active");
+	})
+</script>
 </body>
 </html>
