@@ -616,12 +616,14 @@
 }
 .new-page .nav ul li{
 	line-height: 34px;height: 34px;float: left;
-	border-bottom: 3px solid transparent;padding: 0 10px 10px;
+	border-bottom: 3px solid transparent;padding: 0 10px 14px;
 	margin-right: 10px;cursor: pointer;
 }
+.new-page .nav ul li.active,
 .new-page .nav ul li:hover{
 	border-bottom-color: #770628;
 }
+.new-page .nav ul li.active a,
 .new-page .nav ul li:hover a{
 	color: #770628;
 }
