@@ -119,7 +119,7 @@
 	position: absolute;top:0;left: 0;width: 145px;height: 70px;line-height: 70px;text-align: center;font-size: 18px;color: #FFFFFF;background-color: #770628;z-index: 9;
 }
 .fair-warn li .img h5{
-	position: absolute;height: 40px;line-height: 40px;width: 130px;text-align: center;font-size: 16px;background-color: #770628;z-index: 9;color: #FFFFFF;right: 15px;
+	position: absolute;height: 40px;line-height: 40px;width: 130px;text-align: center;font-size: 16px;background-color: #770628;z-index:1;color: #FFFFFF;right: 15px;
 	bottom: 10px;
 }
 .fair-warn .txt{
@@ -316,14 +316,14 @@ padding: 0 !important;
 	width: 105%;height: auto;overflow: hidden;
 }
 .project-list li{
-	margin-right: 25px;margin-bottom: 30px;float: left;
+	margin-right:30px;margin-bottom: 30px;float: left;width: 380px;height: auto;
 }
 .project-list li .img{
-	position: relative;width: 367px;height: 236px;overflow: hidden;
+	position: relative;width: 380px;height: 244px;overflow: hidden;
 }
 .project-list li .mask{
 	position: absolute;top: 0;left: 0;right: 0;bottom: 0;
-	background: rgba(0,0,0,0.5);width: 367px;height: 236px;
+	background: rgba(0,0,0,0.5);width: 380px;height: 244px;
 }
 .project-list li .btn{
 	position: absolute;width: 245px;height: 70px;border: 1px solid #FFFFFF;top: 50%;margin-top: -35px;left: 50%;margin-left: -122.5px;line-height: 70px;
@@ -332,7 +332,8 @@ padding: 0 !important;
 	font-size: 32px;color: #FFFFFF;text-align: center;
 }
 .project-list li .txt{
-	height: 160px;width:352px ;background-color: #f7f8fa;padding: 0 10px 0 15px;
+	height: 160px;width:353px ;background-color: #f7f8fa;padding: 0 10px 0 15px;
+	border: 1px solid #e0e0e0;border-top: none;
 }
 .project-list .txt h4{
 	font-size: 18px;color: #770628;padding: 20px 0 18px 0;
@@ -480,14 +481,14 @@ padding: 0 !important;
 	background-color:#770628 ;color: #FFFFFF;
 }
 .house-side{
-	width: 255px;float: right;border: 1px solid #e7e7e7;height: auto;overflow: hidden;
+	width: 265px;float: right;border: 1px solid #e7e7e7;height: auto;overflow: hidden;
 	padding: 0 10px;
 }
 .house-side .hd{
 	height: 45px;line-height: 45px;border-bottom: 1px solid #e7e7e7;
 }
 .house-side .hd h4{
-	float: left;font-size: 16px;color: #333333;border-bottom: 3px solid #d2d2d2;position: relative;top: -3px;
+	float: left;font-size: 16px;color: #333333;border-bottom: 3px solid #d2d2d2;position: relative;top: -2px;
 }
 .house-side .hd h5{
 	float: right;font-size: 12px;color: #666666;
@@ -523,7 +524,7 @@ padding: 0 !important;
 	width: 255px;height: 40px;line-height: 40px;text-align: center;background-color: #770628;color: #FFFFFF;font-size: 14px;cursor: pointer;border: none;margin-bottom: 15px;
 }
 .house-side .img{
-	position: relative;width: 255px;height: 157px;overflow: hidden;
+	position: relative;width: 255px;height: 157px;overflow: hidden;padding-top: 15px;
 }
 .house-side .img .txt{
 	position: absolute;height: 50px;width:245px ;background: rgba(0,0,0,0.5);bottom: 0;left: 0;right: 0;padding-left: 10px;padding-top: 15px;
@@ -532,7 +533,7 @@ padding: 0 !important;
 	font-size: 12px;color: #FFFFFF;margin-bottom: 10px;
 }
 .house-side .lists{
-	margin: 27px 0;height: auto;overflow: hidden;
+	margin: 19px 0;height: auto;overflow: hidden;
 }
 .house-side .lists li{
 	margin-bottom: 17px;
