@@ -226,7 +226,7 @@
  	width: 140px;
  }
  .body .from ul li textarea{
-	width: 352px;height: 88px;border: 1px solid #E8E8E8;padding: 0 10px;
+	width: 352px;height: 68px;border: 1px solid #E8E8E8;padding:10px;
 }
  .body .from .btn{
 	width: 100px;height: 37px;border-radius: 3px;background: #c17b01;
@@ -293,10 +293,10 @@
  }
  /*----------------------一站服务------------*/
  .service-pg{
-  	height: auto;overflow: hidden;padding: 30px 0;
+  	height: auto;overflow: hidden;padding-bottom: 30px;
 }
 .service-pg .body{
- 	padding: 75px 0 85px;height: auto;overflow: hidden;
+ 	padding: 50px 0 85px;height: auto;overflow: hidden;
 }
 .service-pg .body .img{
 	width: 45%;
@@ -340,6 +340,12 @@
 .h-auto .txt a:hover{
 	background: #5a041e;
 }
+.imm-program .ui-h4{
+	border-bottom: 2px solid #ececec;
+}
+.imm-program .ui-h4 span{
+	bottom: -1px;
+}
 .ui-h4{
 	font-size: 20px;color: #770628;line-height: 50px;height: 50px;border-bottom: 1px solid #ececec;position: relative;
 	margin-bottom: 30px;margin-top: 15px;
@@ -372,6 +378,7 @@
 	width: 38px;height: 38px;border:1px solid #F0F0F0 ;line-height: 38px;
 	text-align: center;margin-right: 6px;float: left;
 }
+.pages ul li.active,
 .pages ul li:hover{
 	background: #F0F0F0;
 }
@@ -622,7 +629,17 @@
 	width: 898px;
 }
 .new-page .nav-list li .left-house .big-new{
-	position: relative;margin-bottom: 10px;width: 898px;
+	position: relative;margin-bottom: 10px;width: 898px;position: relative;
+}
+.new-page .nav-list li .left-house .big-new .prev,
+.new-page .nav-list li .left-house .big-new .next{
+	width: 100px;height: 100px;position: absolute;top: 200px;cursor: pointer;z-index: 9;
+}
+.new-page .nav-list li .left-house .big-new .prev{
+	background:url(../imgs/left1.icon.png) no-repeat center ;left: 0;
+}
+.new-page .nav-list li .left-house .big-new .next{
+	background: url(../imgs/right1-icon.png) no-repeat center;right: 0;
 }
 .new-page .nav-list li .left-house .big-new img{
 	display: block;
