@@ -26,7 +26,7 @@
 				<li><a href="#">北美房产</a></li>
 				<li><a href="#">移民项目</a></li>
 				<li><a href="#">新闻资讯</a></li>
-				<li><a href="#">关于中友</a></li>
+				<li class="on"><a href="#">关于中友</a></li>
 				<li><a href="#">联系我们</a></li>
 			</ul>
 		</div>
@@ -317,7 +317,8 @@
 <script type="text/javascript" src="js/script.js" ></script></s>
 <script>
 	jQuery(".company-honor").slide({mainCell:".bd ul",autoPage:true,effect:"leftLoop",autoPlay:true,scroll:3,vis:3,});
-	jQuery(".company-history").slide({mainCell:".bd ul",autoPage:true,effect:"leftLoop",autoPlay:false,vis:3});
+//	jQuery(".company-history").slide({mainCell:".bd ul",autoPage:true,effect:"leftLoop",autoPlay:false,vis:4});
+	jQuery(".company-history").slide({mainCell:".bd ul",autoPlay:true,effect:"leftMarquee",vis:4 ,interTime:50,trigger:"click"});
 	$(".bd-time li").mouseover(function(){
 		$(this).addClass('active').siblings().removeClass('active');
 	})

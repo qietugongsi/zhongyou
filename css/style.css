@@ -20,11 +20,22 @@ body a{
 .header .naver li {
 	float: left; display: inline; padding: 0 20px;
 }
+.header .naver li:hover,
+.header .naver li.on{
+	background: #770628;
+}
+.header .naver li:hover a,
+.header .naver li.on a{
+	color: #FFFFFF;
+}
 .header .login{
 	position: absolute; right: 0; top: 0; line-height: 85px;
 }
 .header .login li{
 	float: left; display: inline; margin-left: 13px;
+}
+.header .login li:hover a{
+	color: #770628;
 }
 .header .srch{
 	position: absolute; right: 180px; top: 27px; width: 208px; height: 28px; border: 1px solid #f2f2f2; border-radius: 15px; background: #fff; 
