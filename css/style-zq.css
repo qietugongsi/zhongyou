@@ -123,7 +123,7 @@
 	bottom: 10px;
 }
 .fair-warn .txt{
-	width: 580px;font-size: 14px;height: 132px;border: 1px solid #ebebeb;border-top: none;
+	width: 580px;font-size: 14px;height: 132px;border: 1px solid #ebebeb;border-top: none;overflow: hidden;
 }
 .fair-warn .txt dl{
 	float: left;
@@ -536,10 +536,10 @@ padding: 0 !important;
 	font-size: 12px;color: #FFFFFF;margin-bottom: 10px;
 }
 .house-side .lists{
-	margin: 19px 0;height: auto;overflow: hidden;
+	margin: 22px 0;height: auto;overflow: hidden;
 }
 .house-side .lists li{
-	margin-bottom: 17px;
+	margin-bottom: 18px;
 }
 .house-side .lists li a{
 	display: block;font-size: 12px;color: #555555;
