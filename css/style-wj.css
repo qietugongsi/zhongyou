@@ -66,7 +66,8 @@
 	height: 415px;position: relative;padding-top: 40px;padding-bottom: 30px;
 }
 .company-pg .company-history ul li{
-	position: absolute;
+	/*position: absolute;*/width: 300px;height: 311px;float: left;
+	margin-left: -55px;cursor: pointer;
 }
 .company-pg .company-history ul li .txt{
 	position: relative;width: 300px;
@@ -84,7 +85,10 @@
 .company-pg .company-history ul li.active h4{
 	background: #770628;
 }
-.company-pg .company-history ul li.active .txt em{
+.company-pg .company-history ul li.active .txt em.up{
+	border-bottom-color:#770628 !important ;
+}
+.company-pg .company-history ul li.active .txt em.down{
 	border-top: 10px solid #770628;
 }
 .company-pg .company-history ul li.active .round{
@@ -116,7 +120,13 @@
 	text-align: center;color: #FFFFFF;font-size: 24px;background: #E8E8E8;
 	margin: 0 auto;
 }
-.company-pg .company-history ul li.n1{
+.company-pg .company-history ul li.odd{
+	margin-top: 85px;
+}
+.company-pg .company-history ul li.first{
+	margin-left: 0px;
+}
+/*.company-pg .company-history ul li.n1{
 	left: 6%;top: 45px;
 }
 .company-pg .company-history ul li.n2{
@@ -127,10 +137,13 @@
 }
 .company-pg .company-history ul li.n4{
 	right: 6%;bottom: 44px;
+}*/
+.company-pg .company-history .bd-time{
+	width: 1045px;margin: 0 auto;
 }
 .company-pg .company-history .line{
-	top: 50%;height: 0px;border-bottom: 1px solid #D1D1D1;
-	width: 88%;margin: 0 auto;position: absolute;left: 6%;
+	top: 49%;height: 0px;border-bottom: 1px solid #D1D1D1;
+	width: 88%;margin: 0 auto;position: absolute;left: 6%;z-index: -1;
 }
 .company-pg .company-honor{
 	padding-top: 40px;padding-bottom: 65px;position: relative;
@@ -202,7 +215,8 @@
 	margin-bottom: 20px;font-size: 0px;
 }
  .body .from ul li input{
-	width: 372px;height: 28px;border: 1px solid #E8E8E8;
+	width: 352px;height: 28px;border: 1px solid #E8E8E8;
+	padding: 0 10px;
 }
  .body .from ul li label{
 	font-size: 16px;color: #000;display: inline-block;text-align: right;
@@ -212,7 +226,7 @@
  	width: 140px;
  }
  .body .from ul li textarea{
-	width: 372px;height: 88px;border: 1px solid #E8E8E8;
+	width: 352px;height: 88px;border: 1px solid #E8E8E8;padding: 0 10px;
 }
  .body .from .btn{
 	width: 100px;height: 37px;border-radius: 3px;background: #c17b01;
@@ -431,8 +445,24 @@
 .house-pic{
 	width: 584px;
 }
+.house-pic .hd {
+	position: relative;height: auto;overflow: hidden;
+}
+.house-pic .hd .prev,
+.house-pic .hd .next{
+	width: 28px;height: 50px;position: absolute;cursor: pointer;top: 18%;
+}
+.house-pic .hd .prev{
+	background: url(../imgs/left.icon.png) rgba(0,0,0,0.5) no-repeat center;left: 0;
+}
+.house-pic .hd .next{
+	background: url(../imgs/right-icon.png) rgba(0,0,0,0.5) no-repeat center;right: 0;
+}
+.house-pic .hd ul{
+	width: 101%;height: 80px;overflow: hidden;
+}
 .house-pic .hd ul li{
-	float: left;
+	float: left;margin-right: 1px;
 }
 .house-info{
 	width: 598px;
@@ -510,7 +540,7 @@
 	height: auto;overflow: hidden;
 }
 .house-info-wrap .text{
-	padding: 0 15px;
+	/*padding: 0 15px;*/
 }
 .house-info-wrap .text p{
 	color: #666666;font-size: 16px;line-height: 30px;
@@ -539,6 +569,12 @@
 .house-info-wrap .faci dl dd p{
 	font-size: 14px;color: #555555;padding-left: 15px;background:url(imgs/d-ico45.png) no-repeat center left ;
 	line-height: 34px;
+}
+.house-info-wrap .ui-h4{
+	border-bottom: 2px solid #ECECEC;
+}
+.house-info-wrap .ui-h4 span{
+	bottom: -1px;
 }
 .house-info-wrap .text01{
 	padding-bottom: 25px;
@@ -636,7 +672,7 @@
 }
 .new-page .nav-list .house-side .data-tx li{
 	color: #e3e3e3;font-size: 14px;line-height: 25px;
-	background: url(imgs/d-icon46.png) no-repeat center left;
+	background: url(../imgs/d-icon46.png) no-repeat center left;
 	padding-left: 6px;
 }
 .new-page .nav-list .house-side .from ul li .txt{
