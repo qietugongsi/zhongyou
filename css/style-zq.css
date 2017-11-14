@@ -226,7 +226,7 @@ padding: 0 !important;
 	margin-bottom: 50px;color: #333333;height: auto;overflow: hidden;
 }
 .exhi-wrap .left .txt h4{
-	font-size: 18px;line-height:30px ;
+	font-size: 18px;line-height:30px ;font-weight: bold;
 }
 .exhi-wrap .left .txt p{
 	font-size: 16px;line-height: 30px;margin-left: 20px;
@@ -239,7 +239,7 @@ padding: 0 !important;
 }
 .exhi-wrap .right{
 	float: right;width: 255px;height: auto;border: 1px solid #e7e7e7;
-	padding: 0 15px 20px;margin-top: 20px;
+	padding: 0 15px 0;margin-top: 20px;
 }
 .exhi-wrap .right .hd{
 	height: 50px;border-bottom: 1px solid #d2d2d2;line-height: 50px;
@@ -268,8 +268,11 @@ padding: 0 !important;
 .exhi-wrap .from .btn{
 	background-color: #770628;color: #FFFFFF;border: none;height: 40px;line-height: 40px;width: 255px;text-align: center;font-size: 14px;cursor: pointer;
 }
-.exhi-wrap .hot-list li{
+.exhi-wrap .hot-list{
 	margin-top: 15px;
+}
+.exhi-wrap .hot-list li{
+	margin-bottom:20px;
 }
 .exhi-wrap .hot-list img{
 	height: 157px;width: 255px;display: block;
@@ -524,7 +527,7 @@ padding: 0 !important;
 	width: 255px;height: 40px;line-height: 40px;text-align: center;background-color: #770628;color: #FFFFFF;font-size: 14px;cursor: pointer;border: none;margin-bottom: 15px;
 }
 .house-side .img{
-	position: relative;width: 255px;height: 157px;overflow: hidden;padding-top: 15px;
+	position: relative;width: 255px;height: 157px;overflow: hidden;
 }
 .house-side .img .txt{
 	position: absolute;height: 50px;width:245px ;background: rgba(0,0,0,0.5);bottom: 0;left: 0;right: 0;padding-left: 10px;padding-top: 15px;
