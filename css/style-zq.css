@@ -328,6 +328,9 @@ padding: 0 !important;
 .project-list li .img{
 	position: relative;width: 380px;height: 244px;overflow: hidden;
 }
+.project-list li .img img{
+	width: 380px;height: 244px;
+}
 .project-list li .mask{
 	position: absolute;top: 0;left: 0;right: 0;bottom: 0;
 	background: rgba(0,0,0,0.5);width: 380px;height: 244px;
