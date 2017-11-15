@@ -251,9 +251,7 @@ padding: 0 !important;
 .exhi-wrap .right .hd{
 	height: 50px;border-bottom: 1px solid #d2d2d2;line-height: 50px;
 }
-/*.exhi-wrap .right .hd h4{
-	font-size: 16px;color: #333333;border-bottom: 4px solid #d2d2d2;display: inline-block;height: 47px;
-}*/
+
 .exhi-wrap .right .from{
 	margin-top: 15px;
 }
@@ -367,7 +365,6 @@ padding: 0 !important;
 .house-pro-list{
 	position: relative;
 }
-
 .scrolling{
 	margin-top: 20px;width: 100%;overflow: inherit;
 }
@@ -384,7 +381,7 @@ padding: 0 !important;
 	width: 100%;overflow: hidden;
 }
 .scrolling .bd li h3{
-	padding-bottom: 30px;
+	padding-bottom: 30px !important;
 }
 .house-pro-list li .img img{
 	display: block;
@@ -559,4 +556,7 @@ padding: 0 !important;
 }
 .house-side .lists li a{
 	display: block;font-size: 12px;color: #555555;
+}
+.house-side .lists li:hover a{
+	color: #770628;
 }

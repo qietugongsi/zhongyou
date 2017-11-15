@@ -258,7 +258,7 @@ padding: 15px 10px 0 15px;	position: relative; height: 130px;border: 1px solid #
 }
 
 .house-pro-list li .btn{
-	position: absolute; right: 0; top: 0; width: 95px; height: 35px; display: block; background: #ededed; text-align: center; line-height: 35px; font-size: 12px; color: #666;
+	position: absolute; right: 0; top:-4px; width: 95px; height: 35px; display: block; background: #ededed; text-align: center; line-height: 35px; font-size: 12px; color: #666;
 }
 .house-pro-list li .btn:hover{
 	background: #C27B01; color: #fff;
