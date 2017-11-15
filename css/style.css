@@ -18,7 +18,19 @@ body a{
 	height: 85px; font-size: 16px; line-height: 85px; padding-left: 140px; 
 }
 .header .naver li {
-	float: left; display: inline; padding: 0 20px;
+	float: left; display: inline; padding: 0 20px;height: 82px;position: relative;
+}
+.header .naver ul li dl{
+	display: none;background: #a7a7a3;width: 104px;position: absolute;
+	background: rgba(0,0,0,0.3);left: 0px;top: 100%;
+}
+.header .naver ul li dl dd a{
+	height:45px ;text-align: center;display:block;
+	line-height: 45px;background: rgba(0,0,0,0.1);
+	color: #FFFFFF;font-size: 12px;margin-bottom: 1px;
+}
+.header .naver ul li dl dd a:hover{
+	background: rgba(0,0,0,0.3);
 }
 .header .naver li:hover,
 .header .naver li.on{
@@ -27,6 +39,10 @@ body a{
 .header .naver li:hover a,
 .header .naver li.on a{
 	color: #FFFFFF;
+}
+.header .naver li:hover dl,
+.header .naver li.active dl{
+	display: block;
 }
 .header .login{
 	position: absolute; right: 0; top: 0; line-height: 85px;
@@ -88,7 +104,7 @@ body a{
 }
 /*右边浮框*/
 .float-contact{
-	position: fixed; top: 50%; margin-top: -150px; right: 0;
+	position: fixed; top: 50%; margin-top: -150px; right: 0;opacity: 0;transition: ease-in-out;transition: all 1s;
 }
 .float-contact li{
 	height: 60px; margin-bottom: 1px; position: relative;
@@ -105,7 +121,15 @@ body a{
 .float-contact li .desc em{
 	display: block; background: url(../imgs/d-ico17.png) no-repeat; width: 14px; height: 16px; position: absolute; right: 18px; top: 50%; margin-top: -8px;
 }
-
+.float-contact li .desc1 em{
+	top: 21%;
+}
+.float-contact li .desc1 a{
+	height: 130px;padding: 15px 0 10px;
+}
+.float-contact li .desc1 a p{
+	font-size: 14px;line-height: 16px;margin-top: -9px;
+}
 .float-contact li.on .img,
 .float-contact li:hover .img{
 	background: #770628;
@@ -263,13 +287,28 @@ padding: 15px 10px 0 15px;	position: relative; height: 130px;border: 1px solid #
 .house-pro-list li .btn:hover{
 	background: #C27B01; color: #fff;
 }
+
+.house-pro-list .hot{
+	/*width: 378px; height: 408px;*/border: 2px solid #C27B01;
+}
+.house-pro-list .hot{
+	width: 378px; height: 408px;border: 2px solid #C27B01;
+}
 .house-pro-list li{
 	border: 2px solid #FFFFFF;
+}
+
+/*.house-pro-list .hot .img img{
+	width: 378px; height: 259px;
+}
+.house-pro-list .hot .img img{
+	width: 378px; height: 259px;
 }
 .house-pro-list .hot,
 .house-pro-list li:hover{
 	border-color:#C27B01;
-}
+
+}*/
 .house-pro-list .hot .txt,
 .house-pro-list li:hover .txt{
 	border: none;background-color: #f7f8fa;
@@ -476,4 +515,11 @@ padding: 15px 10px 0 15px;	position: relative; height: 130px;border: 1px solid #
 }
 .index-data .form li .btn-1{
 	background: #ff9900; color: #fff; position: absolute; top: 0; left: auto !important; right: 0;
+}
+.get-data{
+	position: fixed;
+	bottom: 0;width: 100%;
+}
+.h-footer{
+	padding-bottom:217px;
 }
