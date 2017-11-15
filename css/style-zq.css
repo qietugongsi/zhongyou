@@ -348,12 +348,12 @@ padding: 0 !important;
 .project-list li .btn h4{
 	font-size: 32px;color: #FFFFFF;text-align: center;
 }
-.project-list li:hover .btn h4{
+/*.project-list li:hover .btn h4{
 	color: #770628;
 }
 .project-list li:hover .btn{
 	border-color: #770628;
-}
+}*/
 .project-list li .txt{
 	height: 160px;width:353px ;background-color: #f7f8fa;padding: 0 10px 0 15px;
 	border: 1px solid #e0e0e0;border-top: none;

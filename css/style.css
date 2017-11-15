@@ -239,7 +239,7 @@ position: relative;
 	width: 105%; height: auto; overflow: hidden; margin-bottom: 40px;
 }
 .house-pro-list li{
-	float: left; display: inline;width: 380px; margin-right: 27px; height:auto; position: relative;
+	float: left; display: inline;width: 380px; margin-right: 24px; height:auto; position: relative;
 }
 .house-pro-list li .img{
 	width: 380px; height: 261px;overflow: hidden;
@@ -303,12 +303,12 @@ padding: 15px 10px 0 15px;	position: relative; height: 130px;border: 1px solid #
 }
 .house-pro-list .hot .img img{
 	width: 378px; height: 259px;
-}
+}*/
 .house-pro-list .hot,
 .house-pro-list li:hover{
 	border-color:#C27B01;
 
-}*/
+}
 .house-pro-list .hot .txt,
 .house-pro-list li:hover .txt{
 	border: none;background-color: #f7f8fa;
@@ -518,7 +518,7 @@ padding: 15px 10px 0 15px;	position: relative; height: 130px;border: 1px solid #
 }
 .get-data{
 	position: fixed;
-	bottom: 0;width: 100%;
+	bottom: 0;width: 100%;z-index: 9;
 }
 .h-footer{
 	padding-bottom:217px;
