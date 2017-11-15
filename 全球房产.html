@@ -258,7 +258,11 @@
 				<h5>今日已有161报名</h5>
 			</div>
 			<div class="bd">
-				<ul>
+				<ul class="infoList">
+					<li><label>张梦玲</label><label>188****0243</label><label>已经报名成功</label></li>
+					<li><label>何姐姐</label><label>185****1608 </label><label>已经报名成功</label></li>
+					<li><label>莫莫莫  </label><label>135****7825    </label><label>已经报名成功</label></li>
+					<li><label>陈刚姐  </label><label>133****1137 </label><label>已经报名成功</label></li>
 					<li><label>张梦玲</label><label>188****0243</label><label>已经报名成功</label></li>
 					<li><label>何姐姐</label><label>185****1608 </label><label>已经报名成功</label></li>
 					<li><label>莫莫莫  </label><label>135****7825    </label><label>已经报名成功</label></li>
@@ -359,5 +363,6 @@
 <script>
 
 jQuery(".house-pro-list").slide({mainCell:".bd ul",autoPage:true,effect:"leftLoop",autoPlay:true,scroll:1,vis:3,});
+jQuery(".house-side").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:4,interTime:50,trigger:"click"});
 </script>
 </html>

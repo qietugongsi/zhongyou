@@ -260,7 +260,7 @@ padding: 15px 10px 0 15px;	position: relative; height: 122px;
 	background: #C27B01; color: #fff;
 }
 .house-pro-list .hot{
-	width: 378px; height: 408px;border: 2px solid #C27B01;
+	width: 378px; height: 408px;/*border: 2px solid #C27B01;*/
 }
 .house-pro-list .hot .img img{
 	width: 378px; height: 259px;
