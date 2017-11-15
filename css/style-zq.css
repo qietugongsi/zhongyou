@@ -439,6 +439,9 @@ padding: 0 !important;
 .house-detail li .txt h3{
 	font-size: 18px;color: #666666;margin-bottom: 30px;font-weight: bold;
 }
+.house-detail li:hover .txt h3{
+	color: #770628;
+}
 .house-detail li .bd{
 	height: auto;overflow: hidden;
 }
@@ -535,6 +538,9 @@ padding: 0 !important;
 }
 .house-side .btn{
 	width: 255px;height: 40px;line-height: 40px;text-align: center;background-color: #770628;color: #FFFFFF;font-size: 14px;cursor: pointer;border: none;margin-bottom: 15px;
+}
+.house-side .btn:hover{
+	background-color: #5A041E;
 }
 .house-side .img{
 	position: relative;width: 255px;height: 157px;overflow: hidden;
