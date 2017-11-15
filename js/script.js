@@ -9,118 +9,134 @@ $(function(){
 	 //关闭底部
 	 $('.index-data .close').click(function(){
 	 	$('.index-data').hide();
+	 	$(".h-footer").css("padding-bottom",0)
 	 })
 	 //加载动画
 	 if($(".wow").size() > 0){
 		new WOW().init();
 	}
-	 $(function(){
+	//顶部二级导航
+	$(".header .naver li").hover(function(){
+		$(this).addClass("active");
+	},function(){
+		$(this).removeClass("active");
+	})
+	$(function(){
 				//获取普通验证码
-			$('.b2').on("click",getVerifyCode({
-				callBack: function (){//按钮点击后的回调函数，-----必须-----
-					//在这里你还是可以对你的按钮进行操作
-					console.log(this);
-					alert("验证码发送成功");
-				},
-				time: 20,//定时时间，以秒为单位
-				unabledClass: "unlabed"//按钮不能用的样式，即点击按钮后的样式
-			}));
-		});
-	//加载地图
-	 //创建和初始化地图函数：
-	 function initMap(){
-        createMap();//创建地图
-        setMapEvent();//设置地图事件
-        addMapControl();//向地图添加控件
-        addMarker();//向地图中添加marker
-    }
-    
-    //创建地图函数：
-    function createMap(){
-        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-        var point = new BMap.Point(116.514972,39.874301);//定义一个中心点坐标
-        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
-        window.map = map;//将map变量存储在全局
-    }
-    
-    //地图事件设置函数：
-    function setMapEvent(){
-        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
-        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
-        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
-        map.enableKeyboard();//启用键盘上下左右键移动地图
-    }
-    
-    //地图控件添加函数：
-    function addMapControl(){
-        //向地图中添加缩放控件
-	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
-	map.addControl(ctrl_nav);
-        //向地图中添加缩略图控件
-	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
-	map.addControl(ctrl_ove);
-        //向地图中添加比例尺控件
-	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
-	map.addControl(ctrl_sca);
-    }
-    
-    //标注点数组
-    var markerArr = [{title:"中友财富投资管理公司",content:"地址：北京市朝阳区百子湾路后现代城<br/>手机：186112368450",point:"116.514496|39.873401",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
-		 ];
-    //创建marker
-    function addMarker(){
-        for(var i=0;i<markerArr.length;i++){
-            var json = markerArr[i];
-            var p0 = json.point.split("|")[0];
-            var p1 = json.point.split("|")[1];
-            var point = new BMap.Point(p0,p1);
-			var iconImg = createIcon(json.icon);
-            var marker = new BMap.Marker(point,{icon:iconImg});
-			var iw = createInfoWindow(i);
-			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
-			marker.setLabel(label);
-            map.addOverlay(marker);
-            label.setStyle({
-                        borderColor:"#808080",
-                        color:"#333",
-                        cursor:"pointer"
-            });
-			
-			(function(){
-				var index = i;
-				var _iw = createInfoWindow(i);
-				var _marker = marker;
-				_marker.addEventListener("click",function(){
-				    this.openInfoWindow(_iw);
-			    });
-			    _iw.addEventListener("open",function(){
-				    _marker.getLabel().hide();
-			    })
-			    _iw.addEventListener("close",function(){
-				    _marker.getLabel().show();
-			    })
-				label.addEventListener("click",function(){
-				    _marker.openInfoWindow(_iw);
-			    })
-				if(!!json.isOpen){
-					label.hide();
-					_marker.openInfoWindow(_iw);
+		$('.b2').on("click",getVerifyCode({
+			callBack: function (){//按钮点击后的回调函数，-----必须-----
+				//在这里你还是可以对你的按钮进行操作
+				console.log(this);
+				alert("验证码发送成功");
+			},
+			time: 20,//定时时间，以秒为单位
+			unabledClass: "unlabed"//按钮不能用的样式，即点击按钮后的样式
+		}));
+	});
+	(function (window,document){
+		function getVerifyCode(options) {
+			var fn = arguments.callee;
+			return function() {
+				clearInterval(timer);
+				if(!(options && Object.prototype.toString.call(options.callBack) == "[object Function]")) {
+					throw new Error("必须传递参数及回调函数");
 				}
-			})()
-        }
-    }
-    //创建InfoWindow
-    function createInfoWindow(i){
-        var json = markerArr[i];
-        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
-        return iw;
-    }
-    //创建一个Icon
-    function createIcon(json){
-        var icon = new BMap.Icon("imgs/d-ico47.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
-        return icon;
-    }
-    
-    initMap();//创建和初始化地图
-	
+				var that = $(this);
+				if(options.isPhone){
+					var phone = options.getPhone(),
+						reg = options.phoneReg || /^1[3|4|5|7|8][0-9]\d{8}$/;
+					if(!reg.test(phone)) {
+						//如果手机号码不正确，则执行手机号码对应的回调函数
+						options.phoneCallBack && options.phoneCallBack.call(that,phone);
+						return;
+					}
+				}
+				
+				var timer = null,
+					time = options.time || 60,
+					count = 0,//记录定时器执行了多少次
+					interval = 1000,//每次执行间隔
+					start = new Date().getTime(),//开始执行时间
+					targetTime = time * 1000,//目标时间
+					unabledClass = options.unabledClass || "",
+					timeIsUpText = options.timeIsUpText || "重新获取",
+					timeRunnigText = options.timeRunnigText || " s后重新获取";
+				that.off("click");
+				that.addClass(unabledClass);
+				timer = setTimeout(function() {
+					var wucha = 0,//计算误差
+						//下一次执行时间,下一次执行时间 = 每次执行间隔 - 误差
+						nextRunTime = interval,
+						currentFn = arguments.callee;
+					count ++;
+					wucha = new Date().getTime() - (start + count * interval);
+					wucha = (wucha <= 0) ? 0 : wucha;
+					nextRunTime = interval - wucha;
+					nextRunTime = (nextRunTime <= 0) ? 0 : nextRunTime
+					//console.log("误差：" + wucha + "，下一次执行时间：" + nextRunTime);
+					if((targetTime -= interval) <= 0){
+						clearTimeout(timer);
+						/*time = 60;*/
+						that.html(timeIsUpText).removeClass(unabledClass);
+						that.on("click", fn(options));
+					}else{
+						time--;
+						that.html(time + timeRunnigText);
+						//在外部可以获取到倒计时当前时间
+						if(options.getCurrentTime && (Object.prototype.toString.call(options.getCurrentTime) == "[object Function]")){
+							options.getCurrentTime.call(that,time);
+						}
+						timer = setTimeout(currentFn,nextRunTime);
+					}
+				}, interval);
+				//执行回调函数
+				options.callBack.call(that);
+			}
+		}
+		window.getVerifyCode = getVerifyCode;
+	})(window,document);
+	(function($) {
+		$.fn.gallery_slider = function(options) {
+		  var _ops = $.extend({
+		      imgNum: 5 , //图片数量
+		      gallery_item_left: '.prev' , //左侧按钮
+		      gallery_item_right: '.next' , //右侧按钮
+		      gallery_left_middle: '.gallery_left_middle', //左侧图片容器
+		      gallery_right_middle: '.gallery_right_middle', //左侧图片容器
+		      threeD_gallery_item: '.threeD_gallery_item' //图片容器
+		  }, options);
+		  var _this = $(this),
+		  		_imgNum = _ops.imgNum, //图片数量
+		  		_gallery_item_left = _ops.gallery_item_left, //左侧按钮
+		  		_gallery_item_right = _ops.gallery_item_right, //右侧按钮
+		  		_gallery_left_middle = _ops.gallery_left_middle, //左侧图片容器
+		  		_gallery_right_middle = _ops.gallery_right_middle, //左侧图片容器
+		  		_threeD_gallery_item = _ops.threeD_gallery_item; //图片容器
+		  		
+	  	//左侧按钮绑定点击事件
+	  	_this.find(_gallery_item_left).on('click',function(){
+				var idx = parseInt(_this.find(_gallery_left_middle).index());
+				//当前展示图片逻辑
+				_this.find(_threeD_gallery_item).eq(idx).removeClass('gallery_left_middle').addClass('front_side');
+				//当idx值为0时，执行逻辑
+				_this.find(_threeD_gallery_item).eq(idx == 0 ? idx + _imgNum - 1 : idx - 1).removeClass('gallery_out').addClass('gallery_left_middle');
+				//当idx值为_imgNum - 3时，执行逻辑
+				_this.find(_threeD_gallery_item).eq(idx == _imgNum - 3 ? idx + 2 : idx - _imgNum + 2).removeClass('gallery_right_middle').addClass('gallery_out');
+				//当idx值为_imgNum - 2时，执行逻辑
+				_this.find(_threeD_gallery_item).eq(idx == _imgNum - 2 ? idx + 1 : idx - _imgNum + 1).removeClass('front_side').addClass('gallery_right_middle');
+			})
+			//右侧按钮绑定点击事件
+			_this.find(_gallery_item_right).on('click',function(){
+				var idx = parseInt(_this.find(_gallery_right_middle).index());
+				//当前展示图片逻辑
+				_this.find(_threeD_gallery_item).eq(idx).removeClass('gallery_right_middle').addClass('front_side');
+				//当idx值为0时，执行逻辑
+				_this.find(_threeD_gallery_item).eq(idx == 0 ? idx + _imgNum - 1 : idx - 1).removeClass('front_side').addClass('gallery_left_middle');
+				//当idx值为1时，执行逻辑
+				_this.find(_threeD_gallery_item).eq(idx == 1 ? idx + _imgNum - 2 : idx - 2).removeClass('gallery_left_middle').addClass('gallery_out');
+				//当idx值为_imgNum - 2时，执行逻辑
+				_this.find(_threeD_gallery_item).eq(idx == _imgNum - 2 ? idx + 1 : idx - _imgNum + 1).removeClass('gallery_out').addClass('gallery_right_middle');
+			})
+		};
+	})(jQuery);
 })

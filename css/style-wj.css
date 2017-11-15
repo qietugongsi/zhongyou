@@ -25,6 +25,9 @@
 	margin-bottom: 37px;position: relative;padding-left: 23px;
 	margin-top: 6px;
 }
+.company-pg .company-txt .txt h4:hover{
+	color: #770628;
+}
 .company-pg .company-txt .txt h4.pl0{
 	padding-left: 0px;
 }
@@ -38,7 +41,13 @@
 	font-size: 14px;color: #333;line-height: 30px;
 }
 .company-pg .company-txt .bd{
-	width: 45%;
+	width: 45%;overflow: hidden;
+}
+.company-pg .company-txt .bd img{
+	transition: all 1s linear;
+}
+.company-pg .company-txt .bd img:hover{
+	transform: scale(1.2);
 }
 .company-pg .company-history{
 	position: relative;
@@ -381,6 +390,9 @@ box-shadow:0px 0px 15px rgba(0,0,0,0.1) ;
 .imm-tips ul li a{
 	color: #333333;font-size: 16px;
 }
+.imm-tips ul li a:hover{
+	color: #770628;
+}
 .pages{
 	width: 405px;margin: 0 auto;height: 40px;margin-top: 69px;margin-bottom: 75px;
 }
@@ -403,7 +415,7 @@ box-shadow:0px 0px 15px rgba(0,0,0,0.1) ;
 .content-part{
 	width:1200px;margin: 0 auto;position: relative;
 }
-.part-tese.show .gallery_container{
+/*.part-tese.show .gallery_container{
 	opacity:1;position:relative;transition:all 1s .1s;-webkit-transition:all 1s .1s;-moz-transition:all 1s .1s;-o-transition:all 1s .1s;
 }
 .part-tese .gallery_container{
@@ -438,6 +450,49 @@ box-shadow:0px 0px 15px rgba(0,0,0,0.1) ;
 }
 .gallery_container .gallery_item img{
 	width:100%;height:100%;visibility:hidden;
+}*/
+.part-tese.show .gallery_container{
+	opacity:1;position:relative;transition:all 1s .1s;-webkit-transition:all 1s .1s;-moz-transition:all 1s .1s;-o-transition:all 1s .1s;
+}
+.part-tese .gallery_container{
+	width:966px;height:250px;margin: 0 auto;
+}
+.part-tese .gallery_container .gallery_wrap{
+	width:380px;height:250px;
+}
+.threeD_gallery_wrap{
+	position:absolute;left:272px;
+}
+.front_side{
+	z-index:5;
+}
+.part-tese .front_side .mask{
+	display: none;
+}
+.threeD_gallery_item{
+	position:absolute;width:100%;height:100%;cursor:pointer;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-ms-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease;
+}
+.part-tese .gallery_right_middle{
+	z-index:3;transform: rotate(0.78);
+}
+.gallery_right_middle{
+	z-index:3;-webkit-transform:rotateY(0deg) translateX(330px) translateZ(-273px) scale(.78);
+}
+.gallery_out{
+	-webkit-transform:rotateY(0) translateX(0) translateZ(0) scale(.6);-moz-transform:rotateY(0) translateX(0) translateZ(0) scale(.6);-ms-transform:rotateY(0) translateX(0) translateZ(0) scale(.6);-o-transform:rotateY(0) translateX(0) translateZ(0) scale(.6);transform:rotateY(0) translateX(0) translateZ(0) scale(.6);z-index:-1;opacity:0!important;
+}
+
+.gallery_left_middle{
+	z-index:3;transform:rotateY(0deg) translateX(-330px) translateZ(-273px) scale(.78);
+}
+.part-tese .gallery_container .gallery_wrap img{
+	width:100;
+}
+.gallery_container .gallery_item img.show{
+	visibility:visible;
+}
+.gallery_container .gallery_item img{
+	width:100%;height:100%;visibility:hidden;
 }
 .content-part .prev{
 	background: url(../imgs/d-ico44.png) #cacbcc no-repeat center;left: 0;
@@ -446,7 +501,7 @@ box-shadow:0px 0px 15px rgba(0,0,0,0.1) ;
 	background:url(../imgs/d-ico43.png) #cacbcc no-repeat center;right: 0;
 }
 .content-part .prev,.content-part .next{
-	position: absolute;width: 60px;height: 60px;top: 35%;cursor: pointer;
+	position: absolute;width: 60px;height: 60px;top: 20%;cursor: pointer;
 }
 .gallery_item .mask{
 	position: absolute;top: 0;left: 0;right: 0;bottom: 0;background: rgba(255,255,255,0.7);padding-top: 95px;
@@ -455,6 +510,26 @@ box-shadow:0px 0px 15px rgba(0,0,0,0.1) ;
 .gallery_item .mask h5{
 	color: #555555;font-size: 14px;text-align: center;line-height: 24px;
 }
+
+.team{
+	padding-bottom: 170px;background: url(../images/w-img01.jpg) no-repeat bottom center;
+}
+.taem-pg{
+	padding-top: 20px;
+}
+.taem-pg .txt h3{
+	font-size: 24px;color: #333333;text-align: center;line-height: 24px;
+	margin-bottom: 30px;margin-top: 45px;
+}
+.taem-pg .txt h4{
+	color: #555555;font-size: 18px;text-align: center;
+	margin-bottom: 35px;
+}
+.taem-pg .txt p{
+	font-size: 14px;color: #666666;line-height: 30px;
+	text-indent: 2em;
+}
+
 /*------------------全球房产详情--------------------------------*/
 .h-house{
 	height: 493px;
@@ -554,7 +629,7 @@ box-shadow:0px 0px 15px rgba(0,0,0,0.1) ;
 	background: #82560a;
 }
 .house-info-wrap{
-	height: auto;overflow: hidden;
+	height: auto;overflow: hidden;padding-bottom: 55px;
 }
 .house-info-wrap .text{
 	/*padding: 0 15px;*/
@@ -670,13 +745,22 @@ box-shadow:0px 0px 15px rgba(0,0,0,0.1) ;
 	
 }
 .new-page .nav-list .left-house .new-ul  .img{
-	float: left;
+	float: left;overflow: hidden;
+}
+.new-page .nav-list .left-house .new-ul  .img img{
+	transition: all 1s linear;
+}
+.new-page .nav-list .left-house .new-ul  .img:hover img{
+	transform: scale(1.2);
 }
 .new-page .nav-list .left-house .new-ul  .txt{
 	float: left;padding-left: 30px;width: 67%;
 }
 .new-page .nav-list .left-house .new-ul  .txt h3{
-	color: #333333;font-size: 18px;line-height: 38px;
+	color: #333333;font-size: 18px;line-height: 38px;font-weight: bolder;
+}
+.new-page .nav-list .left-house .new-ul  .txt h3:hover{
+	color: #770628;
 }
 .new-page .nav-list .left-house .new-ul  .txt dl{
 	height: 37px;
@@ -740,6 +824,9 @@ box-shadow:0px 0px 15px rgba(0,0,0,0.1) ;
 	color: #333333;font-size: 16px;padding-bottom: 14px;
 	border-bottom: 3px solid #d2d2d2;width: 96px;
 }
+.new-page .nav-list .house-side .hd h4:hover{
+	color: #770628;
+}
 .new-page .nav-list .house-side .img{
 	position: relative;margin-left: 20px;
 }
@@ -759,10 +846,6 @@ box-shadow:0px 0px 15px rgba(0,0,0,0.1) ;
 .new-page .nav-list .house-side .lists ul li a{
 	font-size: 12px;color: #555;line-height: 30px;display: block;
 }
-/*地图tucss*/
- .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
- .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
-.BMap_Marker.BMap_noprint{
-	background: url(../imgs/d-icon47.png)no-repeat !important;
-	background-size: 34px 43px;width: 34px !important;height: 43px !important;
+.new-page .nav-list .house-side .lists ul li a:hover{
+	color: #770628;
 }
