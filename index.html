@@ -315,8 +315,8 @@
 			<a class="more" href="newsInformation.html">更多+</a>
 			<em></em>
 		</div>
-		<div class="body">
-			<div class="new-lists  wow fadeInUpNew"  data-wow-delay=".2s">
+		<div class="body  wow fadeInUpNew"  data-wow-delay=".2s">
+			<div class="new-lists parHd">
 				<ul>
 					<li class="on">
 						<div class="hd">
@@ -383,9 +383,29 @@
 					</li>
 				</ul>
 			</div>
-			<div class="img  wow fadeInUpNew"  data-wow-delay=".3s">
+		<div class="parBd">
+				<div class="img">
 				<a href="#"><img src="images/d-img07.jpg"/></a>
 			</div>
+			<div class="img">
+				<a href="#"><img src="images/d-img05.jpg"/></a>
+			</div>
+			<div class="img">
+				<a href="#"><img src="images/d-img06.jpg"/></a>
+			</div>
+			<div class="img">
+				<a href="#"><img src="images/d-img01.jpg"/></a>
+			</div>
+			<div class="img">
+				<a href="#"><img src="images/d-img02.jpg"/></a>
+			</div>
+			<div class="img">
+				<a href="#"><img src="images/d-img03.jpg"/></a>
+			</div>
+			<div class="img">
+				<a href="#"><img src="images/d-img04.jpg"/></a>
+			</div>
+		</div>
 		</div>
 	</div>
 	
@@ -573,6 +593,7 @@
 			$('.float-contact').css("opacity",0);
 		}
 	};
+	jQuery("..new-wrap .body").slide({titCell:".parHd li",mainCell:".parBd"});
 </script> 
 </body>
 </html>
