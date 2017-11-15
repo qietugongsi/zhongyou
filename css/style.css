@@ -273,14 +273,12 @@ padding: 15px 10px 0 15px;	position: relative; height: 130px;border: 1px solid #
 .house-pro-list li:hover .txt{
 	border: none;
 }
-/*.house-pro-list .hot{
-	width: 378px; height: 408px;border: 2px solid #C27B01;
+.house-pro-list li .h-ico{
+	position: absolute; left: 0;top: 0; width: 110px; height: 110px; background: url(../imgs/d-ico06.png) no-repeat;z-index: 9;display: none;
 }
-.house-pro-list .hot .img img{
-	width: 378px; height: 259px;
-}*/
-.house-pro-list .hot .h-ico{
-	position: absolute; left: 0; top: 0;display: block; width: 110px; height: 110px; background: url(../imgs/d-ico06.png) no-repeat;
+.house-pro-list .hot .h-ico,
+.house-pro-list li:hover .h-ico{
+	display: block;
 }
 .house-pro-list .hot .txt h3{
 	font-size: 18px; font-weight: bold; padding-bottom: 10px;
