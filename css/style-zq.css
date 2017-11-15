@@ -372,19 +372,17 @@ padding: 0 !important;
 	width: 1320px;height: 50px;
 }
 .scrolling .tempWrap{
-	height: 412px;overflow: hidden;
+	height: 412px;
 }
 .scrolling li{
 	margin-right: 24px;
 }
-
 .scrolling .bd{
 	width: 100%;overflow: hidden;
 }
 .scrolling .bd li h3{
 	padding-bottom: 30px;
 }
-
 .house-pro-list li .img img{
 	display: block;
 }
