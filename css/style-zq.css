@@ -190,6 +190,9 @@ padding: 0 !important;
 .review-past li .txt h5{
 	color: #666666;font-size: 14px;margin-top:35px;
 }
+.review-past li:hover .txt h5{
+	color: #770628;
+}
 .review-past li .date{
 	float: left;width: 200px;text-align: center;
 }
@@ -399,7 +402,7 @@ padding: 0 !important;
     background: #C27B01;
     color: #fff;
 }
-.scrolling li .txt .btn:hover{
+.scrolling li:hover .txt .btn{
 	background-color: #b07104;
 }
 .house-pro-list .prev,
