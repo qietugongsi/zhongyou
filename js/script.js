@@ -10,6 +10,11 @@ $(function(){
 	 $('.index-data .close').click(function(){
 	 	$('.index-data').hide();
 	 	$(".h-footer").css("padding-bottom",0)
+	 	$(".get-datum").show()
+	 })
+	 $(".get-datum").click(function(){
+	 	$(this).hide();
+	 	$('.index-data').show();
 	 })
 	 //加载动画
 	 if($(".wow").size() > 0){

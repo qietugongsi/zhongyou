@@ -451,7 +451,9 @@ padding: 15px 10px 0 15px;	position: relative; height: 130px;border: 1px solid #
 .new-wrap .img{
 	float: right; display: inline; width: 576px; height: 372px;
 }
-
+.new-wrap .img img{
+	width: 576px;height: 372px;
+}
 .core-serv{
 	height: auto; overflow: hidden; margin-bottom: 60px; 
 }
@@ -522,4 +524,13 @@ padding: 15px 10px 0 15px;	position: relative; height: 130px;border: 1px solid #
 }
 .h-footer{
 	padding-bottom:217px;
+}
+.get-datum{
+	position: fixed;bottom: 0px;left: 0;display: none;
+}
+.get-datum a{
+	display: block;cursor: pointer;
+}
+.get-datum a img{
+	width: 52px;height: 162px;border-radius: 3px;
 }
